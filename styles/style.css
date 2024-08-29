@@ -96,7 +96,7 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 20px;
 }
 
@@ -182,7 +182,7 @@ body {
 }
 
 .apresentacao__img {
-    width: 50%;
+    width: 30%;
     height: 40%;
     border: inset var(--cor-principal) 8px;
 }
@@ -196,6 +196,14 @@ body {
     font-family: var(--fonte-secundaria);
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+#subtitulo__experiencias{
+    display: none;
+}
+
+#experiencias__lista{
+    display: none;
 }
 
 @media (max-width: 750px){
@@ -246,6 +254,10 @@ body {
 
     .apresentacao__conteudo{
         width: auto;
+    }
+
+    .apresentacao__img{
+        width: 50%;
     }
 
     .open {
